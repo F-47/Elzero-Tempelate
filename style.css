@@ -72,7 +72,7 @@ a {
   background-color: var(--secondary-color);
   border-radius: 50%;
   color: white;
-  z-index: 2;
+  z-index: 3;
 }
 
 .up:hover {
@@ -1030,13 +1030,32 @@ header .megamenu .links li a i {
   align-items: center;
 }
 
+@media (max-width: 991px) {
+  .Our-Skills .container {
+    flex-direction: column;
+  }
+}
+
 .Our-Skills img {
   width: 50%;
+}
+
+@media (max-width: 991px) {
+  .Our-Skills img {
+    width: 100%;
+  }
 }
 
 .Our-Skills .text {
   flex: 1;
   margin-left: 50px;
+  width: 300px;
+}
+
+@media (max-width: 991px) {
+  .Our-Skills .text {
+    margin-left: 0px;
+  }
 }
 
 .Our-Skills .text h3 {
@@ -1854,6 +1873,13 @@ footer .container .box .line i {
   margin-right: 10px;
 }
 
+@media (max-width: 991px) {
+  footer .container .box .line i {
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}
+
 footer .container .box .line .info {
   line-height: 1.5;
   flex: 1;
@@ -1899,23 +1925,3 @@ footer .copyright span {
   background-size: 36px;
 }
 /* End Spikes */
-
-/* Starts Dots */
-.dots {
-  background-image: url("images/Pricing-plan-dots.png");
-  width: 186px;
-  height: 204px;
-  background-repeat: no-repeat;
-  position: absolute;
-}
-
-.dots-up {
-  top: 150px;
-  right: 0;
-}
-
-.dots-down {
-  bottom: 150px;
-  left: 0;
-}
-/* End Dots */
